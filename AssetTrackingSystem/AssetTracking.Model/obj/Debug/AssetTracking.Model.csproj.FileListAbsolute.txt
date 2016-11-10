@@ -115,3 +115,4 @@ E:\demfinal\AssetTrackingSystem\AssetTracking.Model\obj\Debug\AssetTracking.Mode
 E:\demfinal\AssetTrackingSystem\AssetTracking.Model\obj\Debug\AssetTracking.Model.pdb
 E:\demfinal\AssetTrackingSystem\AssetTracking.Model\obj\Debug\AssetTracking.Model.Migrations.updatecategoryidincategory.resources
 E:\demfinal\AssetTrackingSystem\AssetTracking.Model\obj\Debug\AssetTracking.Model.Migrations.updatecategoryidinsubcategory.resources
+E:\demfinal\AssetTrackingSystem\AssetTracking.Model\obj\Debug\AssetTracking.Model.Migrations.updatebranchmodel.resources

@@ -23,39 +23,39 @@
                 Branch Setup
 
             </div>
-            @using (Html.BeginForm("Create", "OrganizationBranch", FormMethod.Post, new {@class = "form-horizontal"}))
+            @using (Html.BeginForm("Create", "OrganizationBranch", FormMethod.Post, new { @class = "form-horizontal" }))
             {
                 <div class="panel-body">
 
                     <div>
                         @Html.Label("Organization")
-                        <br/>
-                        @Html.DropDownListFor(m => m.OrganizationList, new SelectList(Model.OrganizationList, "Value", "Text"), new {@class = "form-control"})
+                        <br />
+                        @Html.DropDownListFor(m => m.Branch.Organization_id, new SelectList(Model.OrganizationList, "Value", "Text"), new { @class = "form-control" })
 
-                        <br/>
+                        <br />
                     </div>
 
                     <div>
                         @Html.LabelFor(m => m.Branch.BranchName)
 
-                        @Html.TextBoxFor(m => m.Branch.BranchName, new {@placeholder = "Name", @class = "form-control"})
-                        @Html.ValidationMessageFor(m => m.Branch.BranchName, null, new {@class = "text-danger"})
-                        <br/>
+                        @Html.TextBoxFor(m => m.Branch.BranchName, new { @placeholder = "Name", @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Branch.BranchName, null, new { @class = "text-danger" })
+                        <br />
                     </div>
 
                     <div>
                         @Html.LabelFor(m => m.Branch.ShortName)
 
-                        @Html.TextBoxFor(m => m.Branch.ShortName, new {@placeholder = "Short Name", @class = "form-control"})
-                        @Html.ValidationMessageFor(m => m.Branch.ShortName, null, new {@class = "text-danger"})
-                        <br/>
+                        @Html.TextBoxFor(m => m.Branch.ShortName, new { @placeholder = "Short Name", @class = "form-control" })
+                        @Html.ValidationMessageFor(m => m.Branch.ShortName, null, new { @class = "text-danger" })
+                        <br />
                     </div>
 
 
                     <div>
                         <button type="submit" class="btn btn-primary btn-block ">Save</button>
                     </div>
-                    <br/>
+                    <br />
 
                 </div>
 
@@ -92,7 +92,7 @@
                         </div>
 
                         <div class="col col-xs-6">
-                            @Html.TextBox("keyword", null, new {@class = "form-control"})
+                            @Html.TextBox("keyword", null, new { @class = "form-control" })
                         </div>
                         <div class="col col-xs-6 text-right">
                             <button type="submit" class="btn btn-sm btn-primary btn-create">Search</button>
@@ -104,18 +104,18 @@
             <div class="panel-body">
                 <table class="table table-striped table-bordered table-list">
                     <thead>
-                    <tr>
+                        <tr>
 
 
-                        <th>Name</th>
-                        <th>Short Name</th>
+                            <th>Name</th>
+                            <th>Short Name</th>
 
-                        <th><em class="glyphicon glyphicon-cog"></em></th>
-                    </tr>
+                            <th><em class="glyphicon glyphicon-cog"></em></th>
+                        </tr>
                     </thead>
 
                     <tbody id="searchResult">
-                    @Html.Action("SearchBranch", new {keyword = ""})
+                        @Html.Action("SearchBranch", new { keyword = "" })
 
 
                     </tbody>
@@ -145,6 +145,7 @@
         </div>
     </div>
 </div>
+
    
     @section Scripts
 {

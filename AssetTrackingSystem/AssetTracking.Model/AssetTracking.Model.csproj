@@ -175,6 +175,10 @@
     <Compile Include="Migrations\201611091511250_updatecategoryidinsubcategory.Designer.cs">
       <DependentUpon>201611091511250_updatecategoryidinsubcategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611091817087_updatebranchmodel.cs" />
+    <Compile Include="Migrations\201611091817087_updatebranchmodel.Designer.cs">
+      <DependentUpon>201611091817087_updatebranchmodel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AssetLocation.cs" />
     <Compile Include="Models\Branch.cs" />
@@ -205,6 +209,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201611091511250_updatecategoryidinsubcategory.resx">
       <DependentUpon>201611091511250_updatecategoryidinsubcategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611091817087_updatebranchmodel.resx">
+      <DependentUpon>201611091817087_updatebranchmodel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

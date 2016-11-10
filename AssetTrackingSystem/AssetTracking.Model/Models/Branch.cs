@@ -10,7 +10,9 @@ namespace AssetTracking.Model
     public class Branch
     {
         public int id { get; set; }
-      
+
+        public int Organization_id { get; set; }
+
         public string BranchName { get; set; }
 
         public string ShortName { get; set; }
